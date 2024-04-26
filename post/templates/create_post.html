@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Post | Tweeter{% endblock title %}
+{% block content %}
+    <div class="feed">
+        <form method="post" class="create-post-form">
+            <h2>Create Post</h2>
+            {{ post_form.as_p }}
+            {% csrf_token %}
+            
+            <button type="submit">Publicar</button>
+        </form>
+    </div>
+{% endblock content %}

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Users{% endblock  %}
+{% block content %}
+    <div class="feed">
+        <h3 class="all-users">All Users</h3>
+        <ul class="users-list">
+            {% for x in users %}
+                <li class="users"><div><h4>@{{ x.username }}</h4></div></li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock  %}
