@@ -1,12 +1,12 @@
 [tool.poetry]
-name = "twitter"
+name = "backend twitter"
 version = "0.1.0"
-description = ""
-authors = ["dudu091999@gmail.com>"]
+description = "projeto backend twitter"
+authors = ["Leonardo Sibuya"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.10.5"
 gitpython = "^3.1.43"
 
 
