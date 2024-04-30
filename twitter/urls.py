@@ -1,29 +1,19 @@
-"""twitter URL Configuration
-
-The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/3.2/topics/http/urls/
-Examples:
-Function views
-    1. Add an import:  from my_app import views
-    2. Add a URL to urlpatterns:  path('', views.home, name='home')
-Class-based views
-    1. Add an import:  from other_app.views import Home
-    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
-Including another URLconf
-    1. Import the include() function: from django.urls import include, path
-    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
-"""
-from django.contrib import admin
-from django.urls import path, include
-from rest_framework import routers
-from project.views import ProfileViewSet
-#from django.conf import settings
-#from django.conf.urls.static import static
-
-router = routers.DefaultRouter()
-router.register('Profile', ProfileViewSet, basename='Profiles')
+from django.urls import path
+from . import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('project.urls')),
+    path('', views.home, name="home"),
+    path('profile_list/', views.profile_list, name="profile_list"),
+    path('profile/<int:pk>', views.profile, name="profile"),
+    path('profile/followers/<int:pk>', views.followers, name='followers'),
+    path('profile/follows/<int:pk>', views.follows, name='follows'),
+    path('login/', views.login_user, name='login'),
+    path('logout', views.logout_user, name='logout'),
+    path('register/', views.register_user, name='register'),
+    path('update_user/', views.update_user, name='update_user'),
+    path('tweet_like/<int:pk>', views.tweet_like, name="tweet_like"),
+    path('unfollow/<int:pk>', views.unfollow, name="unfollow"),
+    path('follow/<int:pk>', views.follow, name="follow"),
+    path('delete_tweet/<int:pk>', views.delete_tweet, name="delete_tweet"),
+    path('edit_tweet/<int:pk>', views.edit_tweet, name="edit_tweet"),
 ]
