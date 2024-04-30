@@ -1,0 +1,260 @@
+body {
+  /*background: #E6E8E9; /*15202b*/
+  font-family: 'Asap', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.navbar {
+  background-color: black /*#E0245E*/;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.avator {
+  border-radius: 100px;
+  width: 60px;
+  margin-right: 15px;
+}
+
+.card {
+  border: none;
+  background-color: rgb(247, 249, 249);
+}
+
+.card-header {
+  /*background-color: #1E96EB /*#E0245E*/
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  border: none;
+}
+
+.list-group-item:hover{
+  background-color: lightgrey;
+  cursor: pointer;
+}
+
+#main {
+  justify-content: center;
+}
+
+#leftBtn {
+  width: 50%;
+  text-align: left;
+  padding: 0;
+}
+
+#rightBtn {
+  width: 50%;
+  text-align: right;
+  padding: 0;
+}
+
+.tweet-wrap {
+  max-width: 490px;
+  background: #fff;
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid lightgray;
+}
+
+.tweet-wrap:hover{
+  background-color: #F5F5F5;
+  cursor: pointer;
+}
+
+.tweet-header {
+  display: flex;
+  align-items: flex-start;
+  font-size: 14px;
+}
+
+.tweet-header-info {
+  font-weight: bold;
+}
+
+.tweet-header-info span {
+  color: #657786;
+  font-weight: normal;
+  margin-left: 5px;
+}
+
+.tweet-header-info p {
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+.tweet-img-wrap {
+  padding-left: 60px;
+}
+
+.tweet-info-counts {
+  display: flex;
+  margin-left: 60px;
+  margin-top: 10px;
+}
+
+.tweet-info-counts div {
+  display: flex;
+  margin-right: 20px;
+}
+
+.tweet-info-counts div svg {
+  color: #657786;
+  margin-right: 10px;
+}
+
+@media screen and (max-width:430px) {
+  body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .tweet-header {
+    flex-direction: column;
+  }
+  .tweet-header img {
+    margin-bottom: 20px;
+  }
+  .tweet-header-info p {
+    margin-bottom: 30px;
+  }
+  .tweet-img-wrap {
+    padding-left: 0;
+  }
+  .tweet-info-counts {
+    display: flex;
+    margin-left: 0;
+  }
+  .tweet-info-counts div {
+    margin-right: 10px;
+  }
+}
+
+.btn-header{
+  background-color: transparent;
+  border-style: none;
+  font-weight: bold;
+  color: white;
+  margin: 10px;
+}
+
+.btn {
+  background-color: #1E96EB;
+  border-style: none;
+  font-weight: bold;
+  color: white;
+}
+
+.btn:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+#charBadge {
+  background-color: #1E96EB /*E0245E*/;
+  position: relative;
+  left: -8px;
+  font-size: 1rem;
+  height: 100%;
+}
+
+a:link {
+  color: #1E96EB /*E0245E*/;
+  text-decoration: none;
+}
+
+/* LOGIN PAGE*/
+.login-page{
+  background: #C0C0C0;
+}
+
+.twitter-login-box {
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 14px;
+    background-color: white;
+}
+
+.twitter-login-box header img{
+    width: 30px;
+    margin: 6px;
+}
+
+.twitter-login-box header{
+    text-align: center;
+}
+.input-wrapper{
+    margin-bottom: 15px;
+}
+
+.input-wrapper label,
+.input-wrapper input{
+    width: 60%;
+    display: block;
+}
+
+.input-wrapper input{
+    border: lightgray solid 1px;
+    border-radius: 6px;
+    padding: 10px 0px;
+    font-size: 20px;
+    margin: 0px 20% 0px 20%;
+}
+
+.input-wrapper label{
+  margin: 0px 20% 0px 20%;
+}
+
+
+.input-wrapper input:focus{
+    outline: none;
+}
+
+.twitter-btn{
+    background-color: black;
+    border: none;
+    width: 50%;
+    padding: 4px 5px;
+    margin: 0px 25% 0px 25%;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.twitter-btn:hover{
+  background-color: rgba(0,0,0,0.8);
+  transition: background-color 0.3s;
+}
+
+.twitter-login-box .footer{
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    color: black;
+}
+.twitter-login-box .footer a{
+    color: black;
+    text-decoration: none;
+}
+
+.twitter-login-box .footer a:hover{
+  text-decoration: underline;
+}
+
+.twitter-login-box .m-erro {
+     color: red;
+}
+
+.infor-password {
+    font-weight: bold;
+}
+.m-erro-register {
+     color: red;
+}
+

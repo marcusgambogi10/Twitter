@@ -1,20 +1,25 @@
-# Backend Django para API REST
+# PROJETO TWITTER
 
-## Descrição
+### Instalando as dependências
+```
+pip install -r requirements.txt
+```
+### Execução
+Criando Migração
 
-Este é um projeto de backend desenvolvido em Django para construção de uma API REST utilizando Django Rest Framework (DRF). A API está hospedada no PythonAnywhere e com o DB em SQL.
+```
+python manage.py makemigrations
+```
+Sincronizando com banco de dados
+```
+python manage.py migrate
+```
+Criar um superusuário com privilégios administrativos
+```
+python manage.py createsuperuser
+```
 
-## Requisitos
-
-- Python 3.x
-- Django
-- Django Rest Framework
-- Ambiente de hospedagem (por exemplo, PythonAnywhere)
-
-## Uso
-
-Esta API fornece endpoints para realizar operações CRUD em recursos específicos, como usuários, postagens, comentários, etc. Consulte a documentação da API para obter detalhes sobre os endpoints disponíveis e como usá-los.
-
-## Autores
-
-- Leonardo Sibuya - Desenvolvedor principal
+Inicia o servidor
+```
+python manage.py runserver
+```
