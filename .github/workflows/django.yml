@@ -1,4 +1,4 @@
-name: Tweeter Django Application
+name: Twitter Django Application
 
 on: push
 
